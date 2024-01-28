@@ -32,6 +32,7 @@ let jsn = {
   ]
 }
 
+//function for calculate total salary of all employees
 let calculateTotalSalary = (salary) => {
   let ts = 0
   let arr = jsn.employees.map(ele => (
@@ -48,7 +49,7 @@ calculateTotalSalary(jsn)
 
 
 
-
+//function to get information of employees by there ids
 let info = ""
 let getEmployeeById = (id) => {
   let detail = jsn.employees[id - 1]
@@ -71,7 +72,7 @@ btn2.addEventListener("click", () => {
 
 
 
-
+//funtion to count of employee working in department 
 
 let getDepartmentEmployeeCount = () => {
   let depart = jsn.employees.map((ele) => {
@@ -109,7 +110,7 @@ getDepartmentEmployeeCount()
 
 
 
-
+//funtion to increament in salary
 let incrementSalary = (id, increament) => {
   let deatils = jsn.employees[id - 1]
   let increamentsalary = deatils.salary + (deatils.salary * increament) / 100
@@ -128,7 +129,7 @@ btn4.addEventListener("click", () => {
 
 
 
-
+//function to add new employee 
 let addNewEmployee = (id, name, position, department, salary) => {
   let employeeadd = {
     id: id,
