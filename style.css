@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cont{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+}
+.subcont{
+    /* border:2px solid black; */
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    
+}
+ul li{
+    list-style: none;
+}
+.detailsofemp{
+    overflow:auto;
+} 
