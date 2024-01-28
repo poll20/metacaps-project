@@ -137,10 +137,7 @@ let addNewEmployee = (id, name, position, department, salary) => {
     department: department,
     salary: salary
   }
-
-  //  JSON.stringify(employeeadd)
   jsn.employees.push(employeeadd)
-  // console.log(jsn.employees)
 }
 let btn5 = document.querySelector("#btn5")
 btn5.addEventListener("click", () => {
@@ -152,5 +149,3 @@ btn5.addEventListener("click", () => {
   alert("employee add successfully ")
   addNewEmployee(id, name, position, department, salary)
 })
-
-// console.log(jsn.employees)
